@@ -1,0 +1,2 @@
+1) Terminal
+2) Sql
