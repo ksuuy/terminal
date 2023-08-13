@@ -1,3 +1,0 @@
-1) Terminal
-2) Sql
-4) dev

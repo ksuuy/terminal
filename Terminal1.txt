@@ -1,0 +1,49 @@
+1) Посмотреть где я - pwd
+2) Создать папку - mkdir less_1
+3) Зайти в папку - cd less_1
+4) Создать 3 папки - mkdir tester programmer designer
+5) Зайти в любоую папку - cd tester
+6) Создать 5 файлов (3 txt, 2 json)- touch l1.txt l2.txt l3.txt l4.json l5.json
+7) Создать 3 папки - mkdir qa qc test
+8) Вывести список содержимого папки - ls -la, ls -a(приховані файли), ls -l(з атрибутами)
+9) + Открыть любой txt файл - cat >l1.txt
+10) + написать туда что-нибудь, любой текст - hello tester
+11) + сохранить и выйти - ctrl+C
+12) Выйти из папки на уровень выше - cd..
+—
+13) переместить любые 2 файла, которые вы создали, в любую другую папку - 
+mv tester/l1.txt programmer/l1.txt
+mv tester/l2.txt programmer/l2.txt
+14) скопировать любые 2 файла, которые вы создали, в любую другую папку -
+cp tester/l3.txt designer/l3.txt
+cp programmer/l2.txt designer/l2.txt
+15) Найти файл по имени - find -name l1.txt
+16) просмотреть содержимое в реальном времени 
+tail l3.txt
+Детальніше про команду:
+-n <число>: Визначає кількість останніх рядків, які треба відобразити (за замовчуванням 10).
+-f або --follow: Слідкувати за змінами у файлі і відображати нові рядки по мірі їх додавання.
+-q або --quiet: Не друкувати заголовок з іменем файлу при виведенні вмісту декількох файлів.
+-v або --verbose: Виводити заголовок з іменем файлу при виведенні вмісту декількох файлів.
+17) вывести несколько первых строк из текстового файла
+head -n 3 l3.txt - виведеться перших 3 рядки з файла
+18) вывести несколько последних строк из текстового файла - 
+tail -n 2 l3.txt - виведеться останніх 2 рядки з текстового файла
+19) просмотреть содержимое длинного файла (команда less) изучите как она работает - less l3.txt
+q - щоб вийти
+Задание *
+1) Отправить http запрос на сервер.
+http://162.55.220.72:5006/terminal-hw-request
+Наприклад, можна використовувати "curl".
+$ curl http://162.55.220.72:5006/terminal-hw-request
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   283  100   283    0     0   3749      0 --:--:-- --:--:-- --:--:--  3773{
+  "Intro": "Hello!! This is your the first response from server",
+  "Tasks": {
+    "Task_1": "Send the next URL in terminal: http://162.55.220.72:5005/get_method?name=(set_your_String)&age=(set_your_number)",
+    "result": [
+      "Your_String",
+      "Your_number"
+    ]
+  }
