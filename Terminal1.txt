@@ -1,3 +1,4 @@
+
 1) Посмотреть где я - pwd
 2) Создать папку - mkdir less_1
 3) Зайти в папку - cd less_1
@@ -34,16 +35,29 @@ q - щоб вийти
 Задание *
 1) Отправить http запрос на сервер.
 http://162.55.220.72:5006/terminal-hw-request
+
 Наприклад, можна використовувати "curl".
-$ curl http://162.55.220.72:5006/terminal-hw-request
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-100   283  100   283    0     0   3749      0 --:--:-- --:--:-- --:--:--  3773{
-  "Intro": "Hello!! This is your the first response from server",
-  "Tasks": {
-    "Task_1": "Send the next URL in terminal: http://162.55.220.72:5005/get_method?name=(set_your_String)&age=(set_your_number)",
-    "result": [
-      "Your_String",
-      "Your_number"
-    ]
-  }
+
+$ curl "http://162.55.220.72:5006/get_method?name=(Ksuy)&age=(20)"
+    
+      "Ksuy",
+      "20"
+    
+#!/bin/bash
+
+mkdir less_1
+cd less_1
+mkdir tester programmer designer
+cd tester
+touch l1.txt l2.txt l3.txt l4.json l5.json
+mkdir qa qc test
+ls -la
+mv l1.txt ../programmer/l1.txt
+mv l2.txt ../programmer/l2.txt
+cd ..
+ls -la
+find -name l1.txt
+
+# Выход из скрипта
+exit
+
