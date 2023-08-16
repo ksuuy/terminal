@@ -144,3 +144,8 @@ $ grep -rl sec | xargs rm -f
  40. Просто вывести в терминал строку “Good job!!”
 $ echo Good job !!
 Good job !!
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 86e92f305f8288e73d657297fed868afbdccc991
